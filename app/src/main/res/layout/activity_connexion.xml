@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".screen.Connexion"
+    android:background="@drawable/background">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_Conx"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/user" />
+        <TextView
+            android:id="@+id/textConx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Connexion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <!-- champ pour enter l email de connexion du client-->
+
+        <TextView
+            android:id="@+id/email_Conx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Your email"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_mail"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_button_blanc"
+            android:ems="10"
+            android:hint="Enter your email"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="18sp" />
+
+        <!-- champ pour le mot de passe de connexion du client -->
+        <TextView
+            android:id="@+id/mot_de_pass"
+            style="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="Your password"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/showPass"
+            android:paddingLeft="8dp"
+            android:text="Show Password"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:id="@+id/edit_mot_de_pas"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/background_button_blanc"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#82D4E5"
+            android:textSize="18sp" />
+
+        <!-- pour mot de passe oublier -->
+        <TextView
+            android:id="@+id/forget_passwordt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Forget password?"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- bouton login pour coiffeur -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/background_button_violet"
+        android:drawableEnd="@drawable/circle2"
+
+        android:paddingStart="64dp"
+        android:text="LOGIN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="411dp"
+        android:layout_height="41dp"
+        android:layout_margin="20dp"
+        android:text="don't have an account? Register!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
